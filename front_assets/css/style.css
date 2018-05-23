@@ -1,0 +1,204 @@
+/*--------------------------------------------------------------
+7.0 - Gallery
+--------------------------------------------------------------*/
+.gallery {
+  padding-top: 0px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+.gallery .masonry {
+  width: 100%;
+  padding-top: 70px;
+}
+.gallery .masonry .grid-sizer,
+.gallery .masonry .item {
+  width: 25%;
+}
+.gallery .masonry .grid-sizer.big,
+.gallery .masonry .item.big {
+  width: 28.57142857142857%;
+}
+@media screen and (max-width: 991px) {
+  .gallery .masonry .grid-sizer,
+  .gallery .masonry .item {
+    width: 25%;
+  }
+  .gallery .masonry .grid-sizer.big,
+  .gallery .masonry .item.big {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery .masonry .grid-sizer,
+  .gallery .masonry .item {
+    width: 33.333333333333%;
+  }
+  .gallery .masonry .grid-sizer.big,
+  .gallery .masonry .item.big {
+    width: 66.666666666666%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .gallery .masonry .grid-sizer,
+  .gallery .masonry .item {
+    width: 100%;
+  }
+  .gallery .masonry .grid-sizer.big,
+  .gallery .masonry .item.big {
+    width: 100%;
+  }
+}
+.gallery .masonry .item {
+  padding: 3px;
+}
+.gallery .masonry .item .wrapper-img {
+  position: relative;
+  overflow: hidden;
+}
+.gallery .masonry .item .wrapper-img .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(226, 19, 19, 0.8);
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.gallery .masonry .item .wrapper-img .hover a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background: #000000;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+.gallery .masonry .item .wrapper-img .hover a:hover i {
+  color: #D84545;
+}
+.gallery .masonry .item .wrapper-img .hover a i {
+  font-size: 25px;
+  line-height: 40px;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.gallery .masonry .item .wrapper-img:hover .hover {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+}
+/*--------------------------------------------------------------
+7.0 - end Gallery
+--------------------------------------------------------------*/
+
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.7);
+    padding-top: 60px;
+}
+ul.footer-nav {
+    list-style-type: none;
+}
+ul.footer-nav {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 18px;
+}
+ul.footer-nav li a:hover{
+ text-decoration:underline;
+}
+ul.slinks li {
+    display: inline-block;
+}
+ul.slinks li a {
+    background-color: #777;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+	margin-bottom:2px;
+}
+ul.slinks li a i {
+    margin-left: 5px;
+	margin-top: 10px;
+}
+ul.slinks li:first-child a:hover{
+ background-color: #415D9B;
+}
+ul.slinks li:nth-child(2) a:hover{
+ background-color: #E62117;
+}
+ul.slinks li:nth-child(3) a:hover{
+ background-color: #0177B5;
+}
+ul.slinks li:nth-child(4) a:hover{
+ background-color: #55ACEE;
+}
+ul.slinks li:nth-child(5) a:hover{
+ background-color: #E62117;
+}
+ul.footer-nav.fgallery li {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+ul.footer-nav li a {
+    line-height: 30px;
+}
+.dropdown, .dropdown-menu  {
+    padding: 0;
+}
+.dropdown-menu  {
+}
+.dropdown-menu>li>a {
+    padding: 15px 20px;
+}
+ul.list-yellow {
+    margin-left: 35px;
+}
+ul.list-yellow li {
+    list-style: none;
+    padding: 0 0 8px 15px;
+    background: url(../img/arrow-yellow.png) 0 7px no-repeat;
+}
+.slide_thum img {
+    width: 100%;
+}
+div#lower-footer {
+    background-color: rgba(226, 19, 19, 0.7);
+}
+div#lower-footer p{
+    color: #fff;
+	padding: 25px 0;
+}
+ul.nav.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #555;
+    background-color: #e7e7e7;
+}
+footer h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
